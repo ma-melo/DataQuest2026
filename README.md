@@ -19,8 +19,23 @@ slides/         apresentação
 
 ## Dados
 
-Os dados **não** são commitados. Baixe a pasta do DataQuest e coloque os arquivos
-diretamente em `data/raw/`:
+Os dados **não** são commitados, mas estão disponíveis para download em:
+
+[https://www.dropbox.com/scl/fo/0a10cwxgq3l2ascqpe926/AH5JxSDo6dYsMqqxqcT0NFk?rlkey=rea1m5k15ijcr3o86pfr6hbft&st=lioxqzvy&dl=0](https://www.dropbox.com/scl/fo/0a10cwxgq3l2ascqpe926/AH5JxSDo6dYsMqqxqcT0NFk?rlkey=rea1m5k15ijcr3o86pfr6hbft&st=lioxqzvy&dl=0)
+
+Depois de baixar o `.zip`, **não precisa descompactar**. Coloque o zip na raiz do repositório e rode o script, que copia os arquivos para `data/raw/`, onde o código os procura:
+
+```bash
+python scripts/copiar_dados.py "2026 ASA DataQuest.zip"
+```
+
+Se você preferir descompactar, rode o script apontando para a pasta:
+
+```bash
+python scripts/copiar_dados.py "CAMINHO/DA/PASTA"
+```
+
+O script copia os arquivos, sem movê-los, e avisa se algum estiver faltando. Os arquivos esperados são:
 
 - `WPP2024_Demographic_Indicators_Medium_csv` (ou a versão `.gz`)
 - `WPP2024_Demographic_Indicators_OtherVariants.csv` (ou a versão `.gz`)
