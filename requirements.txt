@@ -10,3 +10,5 @@ altair>=5.0
 vega_datasets>=0.9
 streamlit>=1.30
 plotly>=5.18
+lifelines>=0.27
+statsmodels>=0.14
